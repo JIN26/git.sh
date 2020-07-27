@@ -1,0 +1,3 @@
+su
+termux-setup-storage
+
