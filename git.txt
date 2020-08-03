@@ -1,0 +1,88 @@
+* git help 
+            //comandos de ayuda
+* git --version 
+            //ver la version del git
+git config --global alias.l "log" 
+            //crea un alias para usar un comando mas rapido
+git config --global user.email "Angelmantilla26@gmail.com"
+            // dato de email del control de cambio
+git config --global user.name "JIN26"
+             // dato de usuario del control de cambio
+* git config -l 
+             // comando para ver la características del propietario de la maquina
+* echo "# 25_practica" >> README.md 
+             //para crear un archivo y adjuntar algo
+* MD Archivos o mkdir Archivos
+            // para crear una carpeta
+* git init 
+            // para iniciar un repositorio
+* git clone 
+            //para clonar un repositorio
+* git add README.md 
+            // agregar un archivo especifico
+* git add . 
+* git add -A 
+* git add --all
+            // para agregar todos los archivos
+* git add *.md
+             // para agregar un tipo de archivos
+* git reset 
+              //reiniciar el git 
+* git reset README.md
+              //quitar un archivo del proyecto
+* git reset --soft id
+             //se ubica en el histórico del commit sin borrar nada
+* git reset --hard id 
+            //se mueve al punto del commit del id
+* git --mixed id
+            //se ubica en el histórico del commit pero borrando todos los commit de hay en adelante
+
+* git revest //retrocede los cambios de un commit
+
+* git revest --no-commit retroce los cambios pero sin dejar un commit de regiatro 
+ 
+* git status
+              //muestra el estado actual de los archivos
+* git diff 
+             // muestra los cambios (Q para salir)
+* git checkout .
+            //retorna un cambios al punto de commit
+* git checkout rama
+            //te ubica en la rama de tu proyecto que deses
+* git checkout -b nueva_rama
+            //crea y te ubica en la nueva rama
+* git merge nueva_rama
+            //para unir una rama con el proyecto principal (cuando no existe conflicto)
+* git log
+            //registro de commit
+* git reflog
+            //registro interno de todos los commit incluyendo los borrados
+* git log --oneline --decorate --all --graph
+            //una forma mas resumida de mas visual del historial de commit y donde nos encontramos
+* git commit -m "first commit"
+             //guardado de cambios
+* git commint --amend -m "first commit"
+            //rectificación del commit
+* git mv README.md Nuevo_nombre.md
+            //para cambiar el nombre
+* git rm README.md
+            //para borrar un archivo
+* git branch nueva_rama
+            //crea una difurcación del proyecto
+* git branch -d nombre_rama
+            //para eliminar una rama 
+* git tag Version 1.0.0
+            //crea una etiqueta
+* git tag -a Version 1.0.0 id -m "vesion inicial"
+            //crea una etiqueta y se le agrega un mensaje sin no pones el id se ubica en la ultima locacion
+* git tag -d nombre_tag
+            //eliminar una etiqueta
+* git remote add origin https://github.com/JIN26/25_practica.git
+* git push -u origin master 
+* git pull //unir ramificaiones en diferentes puntos del proyecto
+* git fetch //actualiza el repositorio local con el del servidor 
+
+
+
+
+// https://github.com/github/gitignore
