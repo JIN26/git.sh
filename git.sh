@@ -1,6 +1,7 @@
 #!/bin/bash 
 
 #My configuration git 
+sudo su
 apt install git 
 apt install vim
 snap install tree
@@ -13,3 +14,6 @@ git config --global alias.p "push -u origin master";
 git config --global user.email "Angelmantilla26@gmail.com"
 git config --global user.name "JIN26"
 git config -l
+apt update
+apt upgrade
+clear
