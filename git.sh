@@ -1,6 +1,7 @@
 #!/bin/bash 
 
 #My configuration git 
+sudo su
 apt install git 
 apt install vim
 snap install tree
