@@ -2,12 +2,14 @@
 
 cd =	{para moverce entre carpetas
 	[..] retornar a la ruta superior
-	[~][ ] te envia a $HOME
+	[~][ ] te envia a $HOME}
 
 pwd =	{ruta actual }
 
 ls =	{listar contenido
 	[-l] listada con permiso
+	[-a] muestra los archivos ocultos 
+	[-h] muestra los datos de forma humana
 	[ls|grep .sh] filtra solo los .sh}
 
 mkdir = {+nombre hacer directorios(carpeta)}

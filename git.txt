@@ -1,16 +1,23 @@
-* git help 
-            //comandos de ayuda
-* git --version 
-            //ver la version del git
-git config --global alias.l "log" 
-            //crea un alias para usar un comando mas rapido
-git config --global user.email "Angelmantilla26@gmail.com"
-            // dato de email del control de cambio
-git config --global user.name "JIN26"
-             // dato de usuario del control de cambio
-* git config -l 
-             // comando para ver la características del propietario de la maquina
-* echo "# 25_practica" >> README.md 
+#Commands git 
+
+git help =  {commands help}
+            
+git --version =  { ver la version del git}
+
+git config --global alias.l "log" = {crea un alias p
+				    ara usar los com
+				    mands mas rapido
+				    }
+git config --global user.email "Angelmantilla26@gmai
+l.com" =  {dato de email del control de cambio}
+
+git config = {muestra las configuracions 
+	     [-l] user confiration characteristics 
+	     [--global] use global config file
+	     [user.name "JIN26"] git username
+	     [user.email "Angelmantilla26@gmail.com"		 ] git email}
+
+echo "# 25_practica" >> README.md 
              //para crear un archivo y adjuntar algo
 * MD Archivos o mkdir Archivos
             // para crear una carpeta
