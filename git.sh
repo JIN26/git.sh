@@ -3,7 +3,8 @@
 #My configuration git 
 apt install git; 
 apt install vim;
-snap install tree
+apt-get install neovim;
+snap install tree;
 git config --global alias.jin "https://github.com/JIN26/";
 git config --global alias.l "log";
 git config --global alias.s "status";
