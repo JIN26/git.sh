@@ -1,5 +1,10 @@
 #!/bin/bash
 
+read -p "Que tipo de lenguaje quieres usar $ " password
+echo "$password"
+
+sleep 5
+
 case "$OSTYPE" in
     cygwin*)
         alias open="cmd /c start"

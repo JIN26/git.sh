@@ -1,13 +1,18 @@
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/vumdle.vim
+#Install vim y neovim
+apt install vim;
+apt-get install neovim;
 
-echo 'set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-let g:clang_c_options = '-std=gnu11'
-Plugin 'VundleVim/Vundle.vim'
+#configuracion de plugins
+#git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/vumdle.vim
 
-" (*) Aqui agregamos las líneas <Plugin> para incorporar nuevos plugins a Vim
+#echo 'set rtp+=~/.vim/bundle/Vundle.vim
+#call vundle#begin()
+#let g:clang_c_options = '-std=gnu11'
+#Plugin 'VundleVim/Vundle.vim'
 
-call vundle#end() " required
-filetype plugin indent on " required'>>~/.vim/plugins.vim;
+#" (*) Aqui agregamos las líneas <Plugin> para incorporar nuevos plugins a Vim
 
-echo 'so ~/.vim/plugins.vim'>>~/.vimrc/plugins.vim;
+#call vundle#end() " required
+#filetype plugin indent on " required'>>~/.vim/plugins.vim;
+
+#echo 'so ~/.vim/plugins.vim'>>~/.vimrc/plugins.vim;

@@ -65,6 +65,12 @@ figlet =
 sleep =
   {[time] duracion de la pausa}
 
+xdg-open =
+  {abrir gestor de archivos}
+
+code =
+  {abri archivo en vscode}
+
 
 ctrl+alt+c =  {abrir nueva ventana}
 

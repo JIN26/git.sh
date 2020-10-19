@@ -1,22 +1,25 @@
+#!/data/data/com.termux/files/usr/bin/bash
+#
 #My configuration termux
 
-cd $PREFIX;
-mkdir Jin;
-cd $PREFIX/Jin;
+cd $HOME;
+mkdir .Jin;
+cd $HOME/.Jin;
 apt install figlet;
 
+#su
 git clone https://gitlab.com/st42/termux-sudo;
 cd termux-sudo;
-chmod 700 sudo;
-cp sudo /data/data/com.termux/files/usr/bin;
-cp sudo /data/data/com.termux/files/usr/bin/applets;
+chmod 711 sudo;
+cp sudo $PREFIX/bin;
+cp sudo $PREFIX/bin/applets;
 su;
-
 setterm -foreground green;
 echo "####################";
 figlet -f block su;
 echo "####################";
 
+#logo
 cd $PREFIX/etc/;
 rm motd;
 rm bash.bashrc;
@@ -24,7 +27,7 @@ echo 'if [ -x /data/data/com.termux/files/usr/libexec/termux/command-not-found ]
         command_not_found_handle() {
                 /data/data/com.termux/files/usr/libexec/termux/command-not-found "$1"
         }
-cd $PREFIX/Jin/
+cd $HOME/.Jin
 ./logo.sh
 cd $HOME/
 fi
@@ -36,7 +39,12 @@ echo "####################";
 figlet -f block logo;
 echo "####################";
 
+#storage
 cd $HOME
 termux-setup-storage;
 
+#git
+./git.sh
 
+#editor
+./nvim.sh
