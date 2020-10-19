@@ -32,7 +32,7 @@ fi
 PS1='Jin$ ''>>bash.bashrc;
 
 setterm -foreground green;
-echo "####################";  
+echo "####################";
 figlet -f block logo;
 echo "####################";
 

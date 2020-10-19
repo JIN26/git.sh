@@ -62,6 +62,10 @@ figlet =
 	termux-open http://patorjk.com/software/taag
   link de ayuda para probar los tipos de letra}
 
+sleep =
+  {[time] duracion de la pausa}
+
+
 ctrl+alt+c =  {abrir nueva ventana}
 
 ctrl+r = {buscador de comandos ejetudatos usados}

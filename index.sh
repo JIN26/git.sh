@@ -7,14 +7,19 @@ case "$OSTYPE" in
     linux-androideabi)
         alias start="xdg-open"
         alias open="xdg-open"
+        clear
         echo "$OSTYPE";
-        cd  ;cd Desktop;
-        mkdir 
+        sleep 2;
+        cd ini;
+        ./termux.sh
         ;;
     linux-gnu)
+        clear;
         echo "$OSTYPE";
-        cd  ;cd Desktop;
-        mkdir 
+        sleep 2;
+        cd ini;
+        ./linux.sh
+        echo $PWD;
         ;;
     darwin*)
         alias start="open"
