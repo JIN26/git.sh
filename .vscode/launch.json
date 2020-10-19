@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "command": "./code.sh",
+            "command": "./index.sh",
             "name": "code",
             "request": "launch",
             "type": "node-terminal"
