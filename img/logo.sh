@@ -30,3 +30,4 @@ echo "          10 101 01  01 010  1";
 echo "          0101   010101   0101";
 echo "           01     0101     01";
 setterm -foreground green
+echo " ";

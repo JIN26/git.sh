@@ -1,7 +1,14 @@
 #!/bin/bash
-
-read -p "Que tipo de lenguaje quieres usar $ " password
-echo "$password"
+function mostrar {
+    echo "Code: $code"
+}
+clear
+sh vnc.sh;
+sh img/logo.sh; 
+read -p "Que tipo de lenguaje quieres usar $ " code
+if[$code="123"];then
+    mostrar
+fi
 
 sleep 5
 
