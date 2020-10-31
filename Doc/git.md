@@ -12,10 +12,10 @@ git config --global alias.l "log" =
 
 git config =
   {muestra las configuracions
-	[-l] user confiration characteristics
-	[--global] use global config file
-	[user.name "JIN26"] git username
-	[user.email "Angelmantilla26@gmail.com]
+  [-l] user confiration characteristics
+  [--global] use global config file
+  [user.name "JIN26"] git username
+  [user.email "Angelmantilla26@gmail.com]
   git email}
 
 git init =
@@ -28,15 +28,15 @@ git add README.md =
   {agregar un archivo al especifico
   al repositorio
   [.][-A][--all] agregar todos
-  [*.md]agregar un y tipo de
+  [*.md]*agregar un y tipo de
   archivo al repositorio}
 
 git reset =
   {reiciar el git
-	[nombre.md] quitar un archivo del repositorio
-	[--soft id] se ubica en el historico
+  [nombre.md] quitar un archivo del repositorio
+  [--soft id] se ubica en el historico
   de el commit sin borrar nada
-	[--hard id] se mueve al punto dl commit del id}
+  [--hard id] se mueve al punto dl commit del id}
 
 git --mixed id =
   {se ubica en el historico del commit pero
@@ -51,14 +51,19 @@ git status =
   {muestra el estado actual de los archivos}
 
 git diff =
-  {muestra los cambios (q para salir)}
+  {muestra los cambios entre commit
+  [HEAD~num HEAD]numero del commit para
+  comparar contando del ultimo (q para salir)}
+
+git show =
+  {muestra los cambios de un archibo}
 
 git checkout =
   {retorna un cambo al punto de commit
   [rama] te ubica en la rama de tu proyecto
-  [-b nueva_rama] crea y te ubica en la nueva rama}
+  [-b nuevaRama] crea y te ubica en la nueva rama}
 
-git merge nueva_rama =
+git merge nuevaRama =
   {para unir una rama con el proyecto principal
   (cuando no existe conflicto)}
 
@@ -78,33 +83,36 @@ git commit =
   [--amend -m "name"] retictificación del commti}
 
 git mv =
-  {[README.md Nuevo_nombre.md] para cambiar el nombre
+  {[README.md NuevoNombre.md]
+  para cambiar el nombre
   [READMEmd ruta] para mover el archivo}
 
 git rm README.md =
   {para borrar un archivo
   [--cached] lo borra del cache2}
 
-git branch nueva_rama =
+git branch nuevaRama =
   {crea una difurcación del proyecto
-  [-d nueva_rama] para eliminar una rama}
+  [-d nuevaRama] para eliminar una rama}
 
 git tag Version 1.0.0 =
   {[version 1.0.0] crea una etiqueta}
-  [-a version 1.0.0 id -m "version inicial"]
+  [-a verision 1.0.0 id -m "version inicial"]
   crea una etiqueta y se le agrega un mensaje sin
   no pones el id se ubica en la ultima locacion
-  [-d name_tag] elimina la etiqueta}
+  [-d nameTag] elimina la etiqueta}
 
 git remote =
-  {[add origin https://github.com/JIN26/25_practica.git]
+  {[add origin https://github.com/JIN26/Plazi.git]
   agrega la ruta de destino}
 
 git push =
   {[-u origin master] se sube en la rama master}
 
 git pull =
-  {unir ramificaiones en diferentes puntos del proyecto}
+  {unir ramificaiones en diferentes 
+  puntos del proyecto}
 
 git fetch =
-  {actualiza el repositorio local con el del servidor}
+  {actualiza el repositorio local 
+  con el del servidor}
