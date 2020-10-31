@@ -29,6 +29,9 @@ sudo npm install expo-cli --global
 
 #otros
 snap install tree;
+ssh-keygen -t rsa -b 4096 -C "Angel_mantilla_26@hotmail.com"
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
 clear;
 
 #expo init clinica

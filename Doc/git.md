@@ -107,14 +107,17 @@ git tag Version 1.0.0 =
 
 git remote =
   {[add origin https://github.com/JIN26/Plazi.git]
-  agrega la ruta de destino}
+  agrega la ruta de destino
+  [set-url] cambiar la url}
 
 git push =
   {[-u origin master] se sube en la rama master}
 
 git pull =
   {unir ramificaiones en diferentes 
-  puntos del proyecto}
+  puntos del proyecto
+  [origin master --allow-unrelated-histories]
+  fuciona conflictos de diferencia de commit}
 
 git fetch =
   {actualiza el repositorio local 
