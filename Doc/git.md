@@ -82,7 +82,8 @@ git mv =
   [READMEmd ruta] para mover el archivo}
 
 git rm README.md =
-  {para borrar un archivo}
+  {para borrar un archivo
+  [--cached] lo borra del cache2}
 
 git branch nueva_rama =
   {crea una difurcación del proyecto

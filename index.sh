@@ -2,6 +2,8 @@
 function mostrar {
     echo "Code: $code"
 }
+apt update;
+apt upgrade;
 clear
 sh vnc.sh;
 sh img/logo.sh; 

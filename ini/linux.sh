@@ -29,8 +29,6 @@ sudo npm install expo-cli --global
 
 #otros
 snap install tree;
-apt update;
-apt upgrade;
 clear;
 
 #expo init clinica
