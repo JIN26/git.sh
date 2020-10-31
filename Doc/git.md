@@ -68,7 +68,9 @@ git merge nuevaRama =
   (cuando no existe conflicto)}
 
 git log =
-  {registro de commit}
+  {registro de commit
+  [--stat]muestra los cambios expecificos
+  [--graph]muestra los cambios con graficos}
 
 git reflog =
   {registro interno de todos los
@@ -80,7 +82,8 @@ git log --oneline --decorate --all --graph =
 
 git commit =
   {[-m "name"] guardado de cambios
-  [--amend -m "name"] retictificación del commti}
+  [--amend -m "name"] retictificación del commti
+  [-a] agrega las modificaciones al commit}
 
 git mv =
   {[README.md NuevoNombre.md]
