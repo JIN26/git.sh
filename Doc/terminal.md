@@ -71,6 +71,11 @@ xdg-open =
 code =
   {abri archivo en vscode}
 
+history =
+  {muestra la historia de los comandos}
+
+!num =
+  {ejecuta ese comando de la history}
 
 ctrl+alt+c =  {abrir nueva ventana}
 

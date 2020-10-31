@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Note</title>
+        <meta charset="UTF-8">
+        <title>Note</title>
 </head>
 <body>
-    <a herf="Doc/vim.md">comando</a>
-    <?php
-        //ejemplo de uso de getenv()
-        $ip=getenv('REMOTE_ADDR');
-        echo("IP: $ip::");
-        //uso de una variable global ($_SERVER o $ENV)
-        $ip=$_SERVER['REMOTE_ADDR'];
-        echo("IP: $ip::");
-    ?>
-    <?php phpinfo();?>
-    </body>
+	<h1>👋 Hello World!</h1>
+	<svg viewBox="0 0 496 512" width="100" title="angry">
+  	<path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zM136 240c0-9.3 4.1-17.5 10.5-23.4l-31-9.3c-8.5-2.5-13.3-11.5-10.7-19.9 2.5-8.5 .6-20.5 20-24 49.4-37.8 80.6-37.8s58.6 13.8 80.6 37.8c13.8 16.5-11.1 36.6-24.5 20.5zm76.6-186.9l-31 9.3c6.3 5.8 10.5 14.1 10.5 23.4 0 17.7-14.3 32-32 32s-32-14.3-32-32c0-2.9.9-5.6 1.7-8.2-.6.1-1.1.2-1.7.2-6.9 0-13.2-4.5-15.3-11.4-2.5-8.5 2.3-17.4 10.7-19.9l80-24c8.4-2.5 17.4 2.3 19.9 10.7 2.5 8.5-2.3 17.4-10.8 19.9z" />
+	</svg>
+	</br>
+	<a href="git.sh/Doc/vim.txt">comando</a>
+</body>
 </html>
