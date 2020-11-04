@@ -1,90 +1,89 @@
-#vim
+# vim
 
-modo insertion=> a
-shit+a insertion al inicio de la linea
-shit+i insertion al final de la linea
-o crea una linea y entra en modo insertion
+    modo insertion=> a
+    shit+a insertion al inicio de la linea
+    shit+i insertion al final de la linea
+    o crea una linea y entra en modo insertion
 
-#movimiento
+# movimiento
 
-
-h izquierda
-j abajo
-k arriba
-l derecha
-
-
-gg ir al inicio
+    h izquierda
+    j abajo
+    k arriba
+    l derecha
 
 
-shit+g al final del fichero
+    gg ir al inicio
 
 
-w inicio de la siguiente palabra
-num+w para ir a esa palabra
+    shit+g al final del fichero
 
 
-e al final de la palabra
-num+e para ir a esa palabra
- 
-0 para moverse al inicio de la linea
-
-$ para moverase al final de la linea
+    w inicio de la siguiente palabra
+    num+w para ir a esa palabra
 
 
-f+letra busca una letra especifica en la linea
+    e al final de la palabra
+    num+e para ir a esa palabra
+
+    0 para moverse al inicio de la linea
+
+    $ para moverase al final de la linea
 
 
-t+letra te hubieca antes de letra que buscas
+    f+letra busca una letra especifica en la linea
 
 
-:set number  muestra el numero de lineas
-:num se mueve a esa linea
+    t+letra te hubieca antes de letra que buscas
 
 
-ctrl+e bajar entre las lineas
+    :set number  muestra el numero de lineas
+    :num se mueve a esa linea
 
 
-ctrl+i subir entre las lineas
+    ctrl+e bajar entre las lineas
 
 
-ctrl+d bajar 10 lineas
+    ctrl+i subir entre las lineas
 
 
-ctrl+u subir 10 lineas
+    ctrl+d bajar 10 lineas
 
 
-[ sube entre lineas basias (tiene incremento)
+    ctrl+u subir 10 lineas
 
 
-] baja entre lineaa basias (tiene incremento)
+    [ sube entre lineas basias (tiene incremento)
 
 
-ctrl+g mueatra datos en la linea inferior
+    ] baja entre lineaa basias (tiene incremento)
 
 
-:set cursorcolumn resalta la columna actual
-:set no cursorcolumn quitar
+    ctrl+g mueatra datos en la linea inferior
 
 
-:set cursorline resalta la line actual
-:set no cursorline quitar
-
-d+num+d corta un numero de lineas
-
-cc elimina la linea y entra en modo insertion
+    :set cursorcolumn resalta la columna actual
+    :set no cursorcolumn quitar
 
 
-ctrl+r==ctrl+z
+    :set cursorline resalta la line actual
+    :set no cursorline quitar
+
+    d+num+d corta un numero de lineas
+
+    cc elimina la linea y entra en modo insertion
 
 
-ZZ guarda los cambios y saca dek editor
+    ctrl+r==ctrl+z
 
 
-Y+num+Y copia el numeronde lineas
+    ZZ guarda los cambios y saca dek editor
 
 
-p pega lo copiado 
+    Y+num+Y copia el numeronde lineas
 
 
-di+caracter elimana lo que este dentro del caracter
+    p pega lo copiado
+
+
+    di+caracter elimana lo que este dentro del caracter
