@@ -6,17 +6,17 @@ function mostrar {
 }
 
 #Actualizacion
-sudo apt update && apt upgrade;
+apt update && apt upgrade;
 
 #Jin
 PWDJIN=$PWD;
 mkdir ~/.Jin
 cd /bin
-sudo ln -s $PWDJIN/img/logo.sh logo
+ln -s $PWDJIN/img/logo.sh logo
 chmod 777 logo.sh
 
 #Servidor localhost
-sudo ln -s $PWDJIN/html/index.html .index.html
+ln -s $PWDJIN/html/index.html .index.html
 chmod 777 .index.html
 
 clear
@@ -33,12 +33,10 @@ eval $(ssh-agent -s)
 #ssh-add ~/.ssh/id_rsa
 
 #git
-sudo sh ini/git.sh
+sh ini/git.sh
 
 #editor
-sudo sh ini/nvim.sh
-
-clear;
+sh ini/nvim.sh
 
 case "$OSTYPE" in
     cygwin*)
