@@ -33,7 +33,462 @@
         //uso de una variable global ($_SERVER o $ENV)
         $ip=$_SERVER['REMOTE_ADDR'];
         echo("IP: $ip::");
-    ?>
-    <?php phpinfo();?-->
+	?>
+	<h1>ESTE ES EL TITULO DE MI PAGINA WED</h1>
+            <ul>
+                    <li><a href="#azul">AZUL</a></li>
+                    <li><a href="#rojo">ROJO</a></li>
+                    <li><a href="#amarillo">AMARILLO</a></li>
+                    <li><a href="#verde">VERDE</a></li>
+            </ul>
+            <hr/>
+
+            <h2>AZUL</h2>
+
+            <img id="azul" src="imagenes/azul.png" width="300" height="300"/>
+            <hr/>
+            <h2 >ROJO</h2>
+            <img id="rojo" src="imagenes/rojo.jpg" width="300" height="300"/>
+            <hr/>
+            <h2 >AMARILLO</h2>
+            <img id="amarillo" src="imagenes/amarillo.jpg" width="300" height="300"/>
+            <hr/>
+            <h2 >VERDE</h2>
+            <img id="verde"src="imagenes/verde.png" width="300" height="300"/>
+	<?php phpinfo();?-->
+	<!DOCTYPE html>
+	<!--
+	To change this license header, choose License Headers in Project Properties.
+	To change this template file, choose Tools | Templates
+	and open the template in the editor.
+	-->
+	<html>
+		 <head>
+			<title>My Blog</title>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!--<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"> -->
+			<link rel="stylesheet" href="css\style.css">
+
+		</head>
+
+		<body>
+			<!-- header start -->
+			<div id="header" class="section">
+				<img alt="" class="img-circle" src="https://code.sololearn.com/Icons/Avatars/0.jpg">
+				<p>Alex Simpson</p>
+			</div>
+			<!-- header end -->
+
+			<!-- About Me section start -->
+			<div class="section">
+				<h1><span>About Me</span></h1>
+				<p>
+					Hey! I'm <strong>Alex</strong>. Coding has changed my world. It's not just about apps. Learning to code gave me <i>problem-solving skills</i> and a way to communicate with others on a technical level. I can also develop websites and use my coding skills to get a better job. And I learned it all at <strong>SoloLearn</strong> where they build your self-esteem and keep you motivated. Join me in this rewarding journey. You'll have fun, get help, and learn along the way!
+				</p>
+				<p class="quote">"Declare variables, not war"</p>
+			</div>
+			<!-- About Me section end -->
+
+			<!-- My Schedule section start -->
+			<div class="section">
+				<h1><span>My Coding Schedule</span></h1>
+				<table>
+					<tr>
+						<th>Day</th>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+						<th>Thu</th>
+						<th>Fri</th>
+					</tr>
+					<tr>
+						<td>8-8:30</td>
+						<td class="selected">Learn</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9-10</td>
+						<td></td>
+						<td class="selected">Practice</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1-1:30</td>
+						<td></td>
+						<td></td>
+						<td class="selected">Play</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>3:45-5</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="selected">Code</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>6-6:15</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="selected">Discuss</td>
+					</tr>
+				</table>
+			</div>
+			<!-- My Schedule section end -->
+
+
+			<!-- My Skills section start -->
+			<div class="section">
+				<h1><span>My Skills</span></h1>
+				<ul>
+					<li>HTML <br />
+						<progress min="0" max="100" value="80"></progress>
+					</li>
+					<li>JavaScript <br />
+						<progress min="0" max="100" value="50"></progress>
+					</li>
+					<li>Python <br />
+						<progress min="0" max="100" value="30"></progress>
+					</li>
+				</ul>
+			</div>
+			<!-- My Skills section end -->
+
+
+			 <!-- Media section start -->
+			<div class="section">
+				<h1><span>My Media</span></h1>
+				<iframe height="150" width="300" src="https://www.youtube.com/embed/Q6_5InVJZ88" allowfullscreen frameborder="0"></iframe>
+			</div>
+			<!-- Media section end -->
+
+			<!-- Form section start -->
+		   <div class="section">
+				<h1><span>Contact Me</span></h1>
+
+				<svg class="face" height="100" width="100">
+					<circle cx="50" cy="50" r="50" fill="#FDD835"/>
+					<circle cx="30" cy="30" r="10" fill="#FFFFFF"/>
+					<circle cx="70" cy="30" r="10" fill="#FFFFFF"/>
+					<circle cx="30" cy="30" r="5" fill="#000000"/>
+					<circle cx="70" cy="30" r="5" fill="#000000"/>
+					<path d="M 30 70 q 20 20 40 0" stroke="#FFFFFF" stroke-width="5" fill="none" />
+				</svg>
+
+				<form>
+					<input name="name" placeholder="Name" type="text" required /><br/>
+					<input name="email" placeholder="Email" type="email" required /><br/>
+					<textarea name="message" placeholder="Message" required ></textarea>
+					<input type="submit" value="SEND" class="submit" />
+				</form>
+			</div>
+			<!-- Form section end -->
+
+			<!-- Contacts section start -->
+			<div class="section" id="contacts">
+				<h1><span>Follow Me</span></h1>
+				<div>
+					<a href="https://www.sololearn.com/" target="_blank">
+						<img alt="SoloLearn" src="https://www.sololearn.com/Uploads/icons/sololearn.png" />
+					</a>
+					<a href="#">
+						<img alt="Facebook" src="https://www.sololearn.com/Uploads/icons/facebook.png"/>
+					</a>
+					<a href="#">
+						<img alt="Twitter" src="https://www.sololearn.com/Uploads/icons/twitter.png" />
+					</a>
+				</div>
+			</div>
+			<!-- Contacts section end -->
+
+			<div clas="copyright">
+				&copy; 2017 My Blog. All rights reserved.
+			</div>
+
+		</body>
+	</html>
+	<!DOCTYPE html>
+	<!--
+	To change this license header, choose License Headers in Project Properties.
+	To change this template file, choose Tools | Templates
+	and open the template in the editor.
+	-->
+	<html lang="en" dir="ltr">
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+			<title>Tu Peso En Otro Planeta</title>
+			<!--<link rel="stylesheet" href="css\style.css">-->
+			<link rel="stylesheet" href="css\styleBase.css">
+			<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+			.en-markup-crop-options {
+				top: 18px !important;
+				left: 50% !important;
+				margin-left: -100px !important;
+				width: 200px !important;
+				border: 2px rgba(255,255,255,.38) solid !important;
+				border-radius: 4px !important;
+			}
+
+			.en-markup-crop-options div div:first-of-type {
+				margin-left: 0px !important;
+			}
+			</style>
+		</head>
+		<body>
+			<h1><code>Tu peso en otro planeta</code></h1>
+			<!--<p>
+				En marte pesas distinto en la <strong>tierra</strong> <br />
+				Elige tu planeta <br /> 1 es Marte , 2 es Jupiter <br />
+				<input type="text" id="lugar"/>
+				<br />¿Cual es tu peso?<br />
+				<input type="text" id="peso"/>
+			</p>-->
+
+			<from autocomplete="off">
+				<div class="FromInput">
+					<label class="FromImput-label" aria-hidden="true">Nombre</label>
+					<input type="text" data-type="text" name="fistname" value="" aria-required="true" placeholder="Nombre" />
+				</div>
+				<div class="FromInput">
+					<label class="FromImput-label" aria-hidden="true">Password</label>
+					<input type="password" data-type="password" name="password" value="" aria-required="true" placeholder="Password" />
+				</div>
+				<div class="FromInput">
+					<label class="FromImput-label" aria-hidden="true">Fecha de nacimiento</label>
+					<span class="edad" data-type="selectors" data-name="birthday_wrapper" id="edad">
+						<span>
+							<select aria-label="Día" name="birthday_day" id="day" title="Día">
+								<option value="0">Día</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28" selected="1">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+							</select>
+							<select aria-label="Mes" name="birthday_month" id="month" title="Mes">
+								<option value="0">Mes</option>
+								<option value="1">ene</option>
+								<option value="2">feb</option>
+								<option value="3">mar</option>
+								<option value="4">abr</option>
+								<option value="5">may</option>
+								<option value="6">jun</option>
+								<option value="7" selected="1">jul</option>
+								<option value="8">ago</option>
+								<option value="9">sep</option>
+								<option value="10">oct</option>
+								<option value="11">nov</option>
+								<option value="12">dic</option>
+							</select>
+							<select aria-label="Año" name="birthday_year" id="year" title="Año">
+								<option value="0">Año</option>
+								<option value="2019">2019</option>
+								<option value="2018">2018</option>
+								<option value="2017">2017</option>
+								<option value="2016">2016</option>
+								<option value="2015">2015</option>
+								<option value="2014">2014</option>
+								<option value="2013">2013</option>
+								<option value="2012">2012</option>
+								<option value="2011">2011</option>
+								<option value="2010">2010</option>
+								<option value="2009">2009</option>
+								<option value="2008">2008</option>
+								<option value="2007">2007</option>
+								<option value="2006">2006</option>
+								<option value="2005">2005</option>
+								<option value="2004">2004</option>
+								<option value="2003">2003</option>
+								<option value="2002">2002</option>
+								<option value="2001">2001</option>
+								<option value="2000">2000</option>
+								<option value="1999">1999</option>
+								<option value="1998">1998</option>
+								<option value="1997">1997</option>
+								<option value="1996">1996</option>
+								<option value="1995">1995</option>
+								<option value="1994" selected="1">1994</option>
+								<option value="1993">1993</option>
+								<option value="1992">1992</option>
+								<option value="1991">1991</option>
+								<option value="1990">1990</option>
+								<option value="1989">1989</option>
+								<option value="1988">1988</option>
+								<option value="1987">1987</option>
+								<option value="1986">1986</option>
+								<option value="1985">1985</option>
+								<option value="1984">1984</option>
+								<option value="1983">1983</option>
+								<option value="1982">1982</option>
+								<option value="1981">1981</option>
+								<option value="1980">1980</option>
+								<option value="1979">1979</option>
+								<option value="1978">1978</option>
+								<option value="1977">1977</option>
+								<option value="1976">1976</option>
+								<option value="1975">1975</option>
+								<option value="1974">1974</option>
+								<option value="1973">1973</option>
+								<option value="1972">1972</option>
+								<option value="1971">1971</option>
+								<option value="1970">1970</option>
+								<option value="1969">1969</option>
+								<option value="1968">1968</option>
+								<option value="1967">1967</option>
+								<option value="1966">1966</option>
+								<option value="1965">1965</option>
+								<option value="1964">1964</option>
+								<option value="1963">1963</option>
+								<option value="1962">1962</option>
+								<option value="1961">1961</option>
+								<option value="1960">1960</option>
+								<option value="1959">1959</option>
+								<option value="1958">1958</option
+								<option value="1957">1957</option>
+								<option value="1956">1956</option>
+								<option value="1955">1955</option>
+								<option value="1954">1954</option>
+								<option value="1953">1953</option>
+								<option value="1952">1952</option>
+								<option value="1951">1951</option>
+								<option value="1950">1950</option>
+								<option value="1949">1949</option>
+								<option value="1948">1948</option>
+								<option value="1947">1947</option>
+								<option value="1946">1946</option>
+								<option value="1945">1945</option>
+								<option value="1944">1944</option>
+								<option value="1943">1943</option>
+								<option value="1942">1942</option>
+								<option value="1941">1941</option>
+								<option value="1940">1940</option>
+								<option value="1939">1939</option>
+								<option value="1938">1938</option>
+								<option value="1937">1937</option>
+								<option value="1936">1936</option>
+								<option value="1935">1935</option>
+								<option value="1934">1934</option>
+								<option value="1933">1933</option>
+								<option value="1932">1932</option>
+								<option value="1931">1931</option>
+								<option value="1930">1930</option>
+								<option value="1929">1929</option>
+								<option value="1928">1928</option>
+								<option value="1927">1927</option>
+								<option value="1926">1926</option>
+								<option value="1925">1925</option>
+								<option value="1924">1924</option>
+								<option value="1923">1923</option>
+								<option value="1922">1922</option>
+								<option value="1921">1921</option>
+								<option value="1920">1920</option>
+								<option value="1919">1919</option>
+								<option value="1918">1918</option>
+								<option value="1917">1917</option>
+								<option value="1916">1916</option>
+								<option value="1915">1915</option>
+								<option value="1914">1914</option>
+								<option value="1913">1913</option>
+								<option value="1912">1912</option>
+								<option value="1911">1911</option>
+								<option value="1910">1910</option>
+								<option value="1909">1909</option>
+								<option value="1908">1908</option>
+								<option value="1907">1907</option>
+								<option value="1906">1906</option>
+								<option value="1905">1905</option>
+							</select>
+						</span>
+					</span>
+				</div>
+				<div>
+					<div >
+						<div>Sexo</div>
+						<span data-type="radio" data-name="gender_wrapper">
+							<span>
+								<input type="radio" name="sex" value="1">
+								<label>Mujer</label>
+							</span>
+							<span>
+								<input type="radio" name="sex" value="2">
+								<label>Hombre</label>
+							</span>
+							<span>
+								<input type="radio" name="sex" value="-1">
+								<label>Personalizado</label>
+							</span>
+						</span>
+					</div>
+				</div>
+				<input type="button" value="Enviar" id="button"/>
+				<textarea name="comentario" rows="10" cols="40">Escribe tu commentario...</textarea>
+				<input  id="linea" type="text" data-type="text" name="fistname" value="Nombre" aria-required="true" placeholder="Nombre" required minlength="4"/>
+			</from>
+			<p> </p>
+			<canvas width="300" height="300" id="Imagen"></canvas>
+
+			<form autocomplete="off">
+			<div class="box-text">
+				<label for="msg-text">Enter the message text:</label>
+				<input type="text" id="msg-text" name="msg-text" required minlength="1">
+			</div>
+			<div class="box-type">
+				<fieldset>
+					<legend>Select the message type:</legend>
+
+					<input type="radio" id="normal" name="msg-type" checked>
+					<label for="msg-type-normal">Normal</label>
+
+					<input type="radio" id="chat" name="msg-type">
+					<label for="msg-type-chat">Chat</label>
+
+					<input type="radio" id="warning" name="msg-type">
+					<label for="msg-type-warning">Warning</label>
+				</fieldset>
+				</div>
+				<button type="button">Display message box</button>
+			</form>
+
+			<script src="js\abc.js" ></script>
+			<script src="js\comportamiento.js" ></script>
+		</body>
+	</html
 </body>
 </html>

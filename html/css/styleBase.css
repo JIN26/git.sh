@@ -1,0 +1,105 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7 jul. 2019, 17:53:31
+    Author     : CYBER-SERVER
+*/
+
+body{
+    background-color: aquamarine;
+    color: white;
+    font-family: Helvetica;
+}
+strong{
+    background-color: #FFAAAA;
+}
+
+h1{
+    text-align: center;
+}
+
+.FromInput{
+    text-align: center;
+    color: black;
+    background: white;
+    border: 20px solid rgba(0, 0, 0, 0);
+}
+
+.FormInput-label {
+    position: absolute;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-filter: alpha(opacity=0);
+    -moz-filter: alpha(opacity=0);
+    -ms-filter: alpha(opacity=0);
+    -o-filter: alpha(opacity=0);
+    filter: alpha(opacity=0);
+    -webkit-transition: 0.2s opacity;
+    -moz-transition: 0.2s opacity;
+    -o-transition: 0.2s opacity;
+    -ms-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+    z-index: -1;
+}
+
+p{
+    width:10px;
+    height:10px;
+    border:1px solid black;
+    border-radius:3px;
+    position:absolute ;
+    background: #124555 ;
+}
+/*David*/
+ .msgBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 242px;
+    background: #eee;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .msgBox p {
+    line-height: 1.5;
+    padding: 10px 20px;
+    color: #333;
+    padding-left: 82px;
+    background-position: 25px center;
+    background-repeat: no-repeat;
+  }
+
+  .msgBox button {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.1rem;
+    color: #aaa;
+  }
+
+  #msg-text:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
+
+  #msg-text:focus:invalid {
+    box-shadow: none;
+  }
+
+  .en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
