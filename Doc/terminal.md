@@ -80,3 +80,8 @@ history =
 ctrl+alt+c =  {abrir nueva ventana}
 
 ctrl+r = {buscador de comandos ejetudatos usados}
+
+# Terminal termux
+
+gzip =
+  {[-8 file] comprimir un archivo};

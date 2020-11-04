@@ -1,10 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash
-#
+
 #My configuration termux
 
-cd $HOME;
-mkdir .Jin;
-cd $HOME/.Jin;
+mkdir ~/.Jin;
+cd ~/.Jin;
 apt install figlet;
 
 #su
@@ -22,7 +21,6 @@ echo "####################";
 #logo
 cd $PREFIX/etc/;
 rm motd;
-rm bash.bashrc;
 echo 'if [ -x /data/data/com.termux/files/usr/libexec/termux/command-not-found ]; then
         command_not_found_handle() {
                 /data/data/com.termux/files/usr/libexec/termux/command-not-found "$1"
@@ -32,7 +30,7 @@ cd $HOME/.Jin
 cd $HOME/
 fi
 
-PS1='Jin$ ''>>bash.bashrc;
+PS1='Jin$ ''>bash.bashrc;
 
 setterm -foreground green;
 echo "####################";
@@ -40,13 +38,32 @@ figlet -f block logo;
 echo "####################";
 
 #storage
-cd $HOME
+cd ~;
 termux-setup-storage;
 
-#git
-./git.sh
+#pack
+git clone https://github.com/3xploit666/packtermux;
+cd packtermux;
+chmod 755 *scriptpack.sh;
+sh scriptpack.sh;
+apt install util-linux;
 
-#editor
-./nvim.sh
+wget http://pastebin.com/raw/3BKSBrZ5 -O install.sh;dos2unix install.sh;
+chmod u+x install.sh;
+./install.sh;
 
-pkg update -y && pkg install curl proot tar -y && curl https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Kali/kali-xfce.sh | bash
+pkg install python2;
+python2 Real-DNS;
+apt-get install w3m;
+pkg install php;
+apt install termux-api;
+apt install openssh;
+
+git clone https://github.com/FELIPECAHM/CAHMSUDO.git
+chmod +x sudo
+
+
+git clone https://github.com/Anonymous-Zpt/T-root
+
+#OS kali
+pkg update -y && pkg install curl proot tar -y && curl https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Kali/kali-xfce.sh | bashh

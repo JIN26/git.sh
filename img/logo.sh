@@ -31,3 +31,6 @@ echo "          0101   010101   0101";
 echo "           01     0101     01";
 setterm -foreground green
 echo " ";
+echo " ";
+echo "                $OSTYPE";
+echo " ";
