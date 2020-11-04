@@ -1,9 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 #My configuration termux
-
-mkdir ~/.Jin;
-cd ~/.Jin;
 apt install figlet;
 
 #su
