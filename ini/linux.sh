@@ -1,12 +1,5 @@
 #!/bin/bash
 
-#Jin
-cd ../img
-sudo mkdir ~/.Jin
-sudo cp logo.sh ~/.Jin
-cd ~/.Jin
-
-
 #Install github cli
 apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
 apt-add-repository https://cli.github.com/packages
@@ -23,12 +16,10 @@ sudo npm install -g react-native-app
 sudo npm install expo-cli --global
 
 #alias de linux
-echo "#User default 
+echo "#User default
 alias vim="vim -p"
-sh ~/.Jin/logo.sh
-echo " ";
-echo "                  $OSTYPE";
-echo " ";
+~/.Jin/logo.sh
+
 case "$OSTYPE" in
     cygwin*)
         alias open="cmd /c start"

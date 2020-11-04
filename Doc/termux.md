@@ -75,7 +75,7 @@
 
     *apt list --installed . Lista todos los paquetes instalados en el sistema.
 
-    *apt remote [paquete]. Permite quitar un paquete instalado en el sistema.
+    *apt remove [paquete]. Permite quitar un paquete instalado en el sistema.
 
 
 

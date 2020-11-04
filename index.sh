@@ -6,30 +6,37 @@ function mostrar {
 }
 
 #Actualizacion
-apt update && apt upgrade;
+sudo apt update && apt upgrade;
+
+#Jin
+PWDJIN=$PWD;
+mkdir ~/.Jin
+cd /bin
+sudo ln -s $PWDJIN/img/logo.sh logo
+chmod 777 logo.sh
 
 #Servidor localhost
-cp -s html/index.html ../../
-mv ../../index.html ../../.index.html
+sudo ln -s $PWDJIN/html/index.html .index.html
+chmod 777 .index.html
 
 clear
-sh img/logo.sh; 
+~/.Jin/logo.sh
 
 read -p "Que tipo de lenguaje quieres usar $ " code
 #if[$code="123"];then
     mostrar
 #fi
 
-# ssh llave install
+# ssh llave install.
 #ssh-keygen -t rsa -b 4096 -C "Angel_mantilla_26@hotmail.com"
 eval $(ssh-agent -s)
 #ssh-add ~/.ssh/id_rsa
 
 #git
-./git.sh
+sudo sh ini/git.sh
 
 #editor
-./nvim.sh
+sudo sh ini/nvim.sh
 
 clear;
 
