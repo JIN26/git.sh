@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 7 jul. 2019, 17:53:31
     Author     : CYBER-SERVER
 */
@@ -90,7 +90,7 @@ p{
   #msg-text:focus:invalid {
     box-shadow: none;
   }
-
+/* Copyright 2014 Evernote Corporation. All rights reserved. */
   .en-markup-crop-options {
     top: 18px !important;
     left: 50% !important;

@@ -1,10 +1,10 @@
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-/* var lugar=parseFloat(document.getElementById("lugar").value);
-// var peso = parseFloat(document.getElementById("peso").value);
+var lugar=parseFloat(document.getElementById("lugar").value);
+var peso = parseFloat(document.getElementById("peso").value);
 var planeta = new Array("Marte","Jupiter","este planeta no existente");
 var gravedad = new Array(9.8,3.7,24.8);
 var pesoFinal;
@@ -14,15 +14,15 @@ switch(lugar){
         pesoFinal = parseFloat(peso * gravedad[1] / gravedad[0]);
     break;
     case 2:
-        pesoFinal = parseFloat(peso * gravedad[2] / gravedad[0]); 
+        pesoFinal = parseFloat(peso * gravedad[2] / gravedad[0]);
     break;
     default:
         lugar=3;
         pesoFinal = "No calculable";
     break;
 }
-var ruta = window.location;*/
-//console.log(ruta);
+var ruta = window.location;
+console.log(ruta);
 
 var teclas = {
   UP: 38,
@@ -53,11 +53,12 @@ function alzar(){
   movimiento = false;
 }
 function trazo(evento) {
+    console.log(evento);
   if (movimiento) {
     x = evento.offsetX;
     y = evento.offsetY;
     dibujarLinea(tinta, x, y, x-1, y-1, lienzo);
-  } 
+  }
 }
 var fechaNacimiento = document.getElementById("linea");
 var button = document.getElementById("button");
@@ -96,11 +97,11 @@ function dibujarLinea(color, xI, yI, xF, yF, lienzo){
 }
 
 function dibujarTeclado(evento){
-    
+
     var pinta = "green";
     var movimiento = 5;
     switch(evento.keyCode){
-        
+
         case teclas.UP:
             dibujarLinea(pinta, x, y, x, y - movimiento, lienzo);
             y = y - movimiento;
@@ -121,7 +122,7 @@ function dibujarTeclado(evento){
     }
 }
 
-//document.write("Tu peso en "+planeta[--lugar]+" es  <strong> "+ pesoFinal + " kilos</strong>"); 
+document.write("Tu peso en "+planeta[--lugar]+" es  <strong> "+ pesoFinal + " kilos</strong>");
 
 function displayMessage(msgText, msgType) {
     if (msgText !== '') {
@@ -141,7 +142,7 @@ function displayMessage(msgText, msgType) {
 
       closeBtn.onclick = function() {
         panel.parentNode.removeChild(panel);
-      } 
+      }
 
       if(msgType === 'warning') {
         msg.style.backgroundImage = 'url(icons/warning.png)';
@@ -153,11 +154,11 @@ function displayMessage(msgText, msgType) {
         msg.style.paddingLeft = '20px';
       }
     }
-  }  
+  }
 
   var ctrlMsgText = document.querySelector('.box-text input');
   var userMsgText = ctrlMsgText.value;
-  
+
   ctrlMsgText.onchange = function(e) {
     userMsgText = e.target.value;
   }
@@ -165,7 +166,7 @@ function displayMessage(msgText, msgType) {
   var ctrlMsgType = document.querySelector('.box-type fieldset')
                              .elements;
 
-  var userMsgType; 
+  var userMsgType;
 
   function checkedBtn(e) {
     if (e.target.checked) {
@@ -180,4 +181,4 @@ function displayMessage(msgText, msgType) {
   var button = document.querySelector('button');
   button.onclick = function() {
     displayMessage(userMsgText, userMsgType);
-  }
+  }; 
