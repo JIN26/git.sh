@@ -11,4 +11,4 @@ git config --global alias.d "https://github.com/JIN26/"
 git config --global alias.github "git@github.com:JIN26/git.sh.git";
 git config --global user.email "Angelmantilla26@gmail.com";
 git config --global user.name "JIN26";
-git config -l;
+#git config -l;

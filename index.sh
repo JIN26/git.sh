@@ -2,7 +2,12 @@
 
 function mostrar {
     echo "Code: $code"
-    sh vnc.sh;
+    curl ifconfig.me||cowsay sorry
+    echo
+    cd ini
+    chmod 777 vnc.sh
+    ./vnc.sh &
+    cd ..
 }
 
 #Actualizacion
@@ -13,14 +18,18 @@ PWDJIN=$PWD;
 mkdir ~/.Jin
 cd /bin
 sudo ln -s $PWDJIN/img/logo.sh logo
-chmod 777 logo.sh
+chmod 777 logo
+cd ~/.Jin
+sudo ln -s $PWDJIN/img/logo.sh logo
+chmod 777 logo
 
 #Servidor localhost
 sudo ln -s $PWDJIN/html/index.html .index.html
 chmod 777 .index.html
 
 clear
-~/.Jin/logo.sh
+logo
+cd $PWDJIN
 
 read -p "Que tipo de lenguaje quieres usar $ " code
 #if[$code="123"];then
@@ -37,9 +46,8 @@ sudo sh ini/git.sh
 
 #editor
 sudo sh ini/nvim.sh
-sudo browse html/index.html
+google-chrome http://localhost:8080
 
-clear;
 
 case "$OSTYPE" in
     cygwin*)
@@ -47,12 +55,13 @@ case "$OSTYPE" in
     linux-androideabi)
         sleep 2;
         cd ini;
-        ./termux.sh
+        sh termux.sh
         ;;
     linux-gnu)
         sleep 2;
         cd ini;
-        ./linux.sh
+        chmod 777 linux.sh
+        sh linux.sh
         ;;
     darwin*)
         ;;

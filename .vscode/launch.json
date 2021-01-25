@@ -5,17 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Chrome",
-            "request": "launch",
-            "type": "pwa-chrome",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        },
-        {
-            "command": "./index.sh",
+            "command": "chmod 777 index.sh; ./index.sh",
             "name": "code",
             "request": "launch",
             "type": "node-terminal"
-        }       
+        }
     ]
 }

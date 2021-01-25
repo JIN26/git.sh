@@ -18,7 +18,7 @@ sudo npm install expo-cli --global
 #alias de linux
 echo "#User default
 alias vim="vim -p"
-~/.Jin/logo.sh
+logo
 
 case "$OSTYPE" in
     cygwin*)
