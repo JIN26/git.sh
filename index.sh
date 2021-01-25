@@ -2,7 +2,12 @@
 
 function mostrar {
     echo "Code: $code"
-    sh vnc.sh;
+    curl ifconfig.me||cowsay sorry
+    echo
+    cd ini
+    chmod 777 vnc.sh
+    ./vnc.sh &;
+    cd ..
 }
 
 #Actualizacion
@@ -13,14 +18,18 @@ PWDJIN=$PWD;
 mkdir ~/.Jin
 cd /bin
 ln -s $PWDJIN/img/logo.sh logo
-chmod 777 logo.sh
+chmod 777 logo
+cd ~/.Jin 
+ln -s $PWDJIN/img/logo.sh logo
+chmod 777 logo
 
 #Servidor localhost
 ln -s $PWDJIN/html/index.html .index.html
 chmod 777 .index.html
 
 clear
-~/.Jin/logo.sh
+logo
+cd $PWDJIN
 
 read -p "Que tipo de lenguaje quieres usar $ " code
 #if[$code="123"];then
@@ -44,12 +53,14 @@ case "$OSTYPE" in
     linux-androideabi)
         sleep 2;
         cd ini;
-        ./termux.sh
+	chmod 777 termux.sh
+        sh termux.sh
         ;;
     linux-gnu)
         sleep 2;
         cd ini;
-        ./linux.sh
+	chmod 777 linux.sh
+        sh linux.sh
         ;;
     darwin*)
         ;;

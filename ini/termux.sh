@@ -4,6 +4,7 @@
 apt install figlet;
 
 #su
+cd ~/.Jin
 git clone https://gitlab.com/st42/termux-sudo;
 cd termux-sudo;
 chmod 711 sudo;
@@ -22,9 +23,9 @@ echo 'if [ -x /data/data/com.termux/files/usr/libexec/termux/command-not-found ]
         command_not_found_handle() {
                 /data/data/com.termux/files/usr/libexec/termux/command-not-found "$1"
         }
-cd $HOME/.Jin
-./logo.sh
-cd $HOME/
+
+logo
+
 fi
 
 PS1='Jin$ ''>bash.bashrc;
@@ -39,6 +40,7 @@ cd ~;
 termux-setup-storage;
 
 #pack
+cd ~/.Jin
 git clone https://github.com/3xploit666/packtermux;
 cd packtermux;
 chmod 755 *scriptpack.sh;
@@ -63,4 +65,5 @@ chmod +x sudo
 git clone https://github.com/Anonymous-Zpt/T-root
 
 #OS kali
-pkg update -y && pkg install curl proot tar -y && curl https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Kali/kali-xfce.sh | bashh
+cd $HOME
+#pkg update -y && pkg install curl proot tar -y && curl https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Kali/kali-xfce.sh | bashh
