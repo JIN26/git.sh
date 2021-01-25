@@ -4,7 +4,7 @@
 apt install figlet;
 
 #su
-cd ~/.Jin
+cd ~/.Jin;
 git clone https://gitlab.com/st42/termux-sudo;
 cd termux-sudo;
 chmod 711 sudo;
@@ -15,7 +15,10 @@ setterm -foreground green;
 echo "####################";
 figlet -f block su;
 echo "####################";
-
+#server phone
+cd ~/.Jin
+echo 'php -S localhost:8081 -t  $HOME/storage/shared/'?'/'>phone.sh;
+chmod 777 phone.sh
 #logo
 cd $PREFIX/etc/;
 rm motd;
@@ -23,7 +26,6 @@ echo 'if [ -x /data/data/com.termux/files/usr/libexec/termux/command-not-found ]
         command_not_found_handle() {
                 /data/data/com.termux/files/usr/libexec/termux/command-not-found "$1"
         }
-
 logo
 
 fi
@@ -65,5 +67,14 @@ chmod +x sudo
 git clone https://github.com/Anonymous-Zpt/T-root
 
 #OS kali
-cd $HOME
 #pkg update -y && pkg install curl proot tar -y && curl https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Kali/kali-xfce.sh | bashh
+
+#kali init
+cd ~;
+echo '#!/bin/bash
+cd ~/.Jin 
+./phone.sh &;
+cd kali;
+./start-kali.sh
+exit'>kali.sh;
+chmod 777 kali.sh;

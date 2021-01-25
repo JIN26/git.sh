@@ -6,7 +6,7 @@ function mostrar {
     echo
     cd ini
     chmod 777 vnc.sh
-    ./vnc.sh &;
+    ./vnc.sh &
     cd ..
 }
 
@@ -16,18 +16,17 @@ apt update && apt upgrade;
 #Jin
 PWDJIN=$PWD;
 mkdir ~/.Jin
-cd /bin
+cd ~/.Jin
 ln -s $PWDJIN/img/logo.sh logo
 chmod 777 logo
-cd ~/.Jin 
-ln -s $PWDJIN/img/logo.sh logo
-chmod 777 logo
+cp logo $PREFIX/bin
+cp logo $PREFIX/bin/applets
 
 #Servidor localhost
-ln -s $PWDJIN/html/index.html .index.html
-chmod 777 .index.html
+ln -s $PWDJIN/html/index.html note
+chmod 777 note
+cp note ~/storage/shared/?
 
-clear
 logo
 cd $PWDJIN
 
@@ -59,7 +58,7 @@ case "$OSTYPE" in
     linux-gnu)
         sleep 2;
         cd ini;
-	chmod 777 linux.sh
+        chmod 777 linux.sh
         sh linux.sh
         ;;
     darwin*)
