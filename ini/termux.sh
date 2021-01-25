@@ -72,6 +72,7 @@ git clone https://github.com/Anonymous-Zpt/T-root
 #kali init
 cd ~;
 echo '#!/bin/bash
+curl ifconfig.me||cowsay sorry
 cd ~/.Jin 
 ./phone.sh &;
 cd kali;

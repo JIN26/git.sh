@@ -23,9 +23,9 @@ cp logo $PREFIX/bin
 cp logo $PREFIX/bin/applets
 
 #Servidor localhost
-ln -s $PWDJIN/html/index.html note
-chmod 777 note
-cp note ~/storage/shared/?
+ln -s $PWDJIN/html/index.html index.html
+chmod 777 index.html
+cp index.html ~/storage/shared/?
 
 logo
 cd $PWDJIN
