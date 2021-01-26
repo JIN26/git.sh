@@ -27,6 +27,10 @@ ln -s $PWDJIN/html/index.html index.html
 chmod 777 index.html
 cp index.html ~/storage/shared/?
 
+#ip php
+ln -s $PWDJIN/html/php/ip.php ip.php
+chmod 777 ip.php
+
 logo
 cd $PWDJIN
 
