@@ -46,7 +46,7 @@ sudo sh ini/git.sh
 
 #editor
 sudo sh ini/nvim.sh
-google-chrome http://localhost:8080
+google-chrome http://192.168.0.4:8080
 
 
 case "$OSTYPE" in

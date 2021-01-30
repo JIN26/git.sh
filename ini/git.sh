@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #My configuration git
-apt install git;
+sudo apt install git;
 git config --global alias.l "log --stat";
 git config --global alias.s "status";
 git config --global alias.lo "log --oneline --decorate --all --graph";

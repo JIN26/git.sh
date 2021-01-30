@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #Install github cli
-apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
-apt-add-repository https://cli.github.com/packages
-apt update
-apt install gh
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+sudo apt-add-repository https://cli.github.com/packages
+sudo apt update
+sudo apt install gh
 
 #nodejs,npm y react-native con expo
 sudo apt-get install -y nodejs
@@ -47,7 +47,7 @@ if [ -f ~/.bash_aliases ]; then
 fi">>~/.bashrc
 
 #otros
-snap install tree;
+sudo snap install tree;
 
 #expo init clinica
 #npx create-react-app clinica
