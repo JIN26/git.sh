@@ -19,17 +19,17 @@ mkdir ~/.Jin
 cd ~/.Jin
 sudo ln -s $PWDJIN/img/logo.sh logo
 chmod 777 logo
-cp logo $PREFIX/bin
-cp logo $PREFIX/bin/applets
+sudo cp logo $PREFIX/bin
+sudo cp logo $PREFIX/bin/applets
 
 #Servidor localhost
-sudo ln -s $PWDJIN/html/index.html index.php
-chmod 777 index.php
-cp index.php ~/storage/shared/?
+sudo ln -s $PWDJIN/index.php index
+chmod 777 index
+sudo cp index ~/Desktop
 
 #ip php
-sudo ln -s $PWDJIN/html/php/ip.php ip.php
-chmod 777 ip.php
+sudo ln -s $PWDJIN/php/ip.php ip
+chmod 777 ip
 
 logo
 cd $PWDJIN

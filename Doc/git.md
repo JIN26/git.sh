@@ -1,11 +1,18 @@
-# Commands git
+<div>
+    <h1>
+        Commands git
+    </h1>
+</div>
 
-    $ git help =
-    {commands help}
-
-    $ git --version =
+## git help
+```shell
+    commands help
+```
+## git
+```shell
+  --version =
     { ver la version del git}
-
+```
     $ git config --global alias.l "log" =
     {crea un alias para usar los
     commands mas rapido }
@@ -85,12 +92,32 @@
     [--amend -m "name"] retictificación del commti
     [-a] agrega las modificaciones al commit}
 
-    $ git mv =
-    {[README.md NuevoNombre.md]
-    para cambiar el nombre
-    [READMEmd ruta] para mover el archivo}
+## git mv <Move or rename a file, directory or symlink>
+**EXAMPLE**
+```shell
+git mv [-v] [-f] [-n] [-k] [-r] README.md path
+git mv [-v] [-f] [-n] [-k] [-r] README.md NewName.md
+git mv [-v] [-f] [-n] [-k] [-r] <source> <destination>
+git mv [-v] [-f] [-n] [-k] [-r] <source> ... <destination directory>
+```
+**OPTIONS**
+```shell
+-f, --force
+   Force renaming or moving of a file even if the target exists
 
-    $ git rm README.md =
+-k
+    Skip move or rename actions which would lead to an error condition.
+    An error happens when a source is neither existing nor controlled
+    by Git, or when it would overwrite an existing file unless -f is
+    given.
+
+-n, --dry-run
+    Do nothing; only show what would happen
+
+-v, --verbose
+    Report the names of files as they are moved.
+```
+## git rm README.md =
     {para borrar un archivo
     [--cached] lo borra del cache2}
 
