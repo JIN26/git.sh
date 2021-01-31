@@ -62,8 +62,9 @@ echo 'IP address  es ' . get_client_ip_env() .' o  es ' . get_client_ip_server()
 
 #server phone
 cd ~/.Jin
-echo 'php -S 192.168.0.26:8081 -t  $HOME/storage/shared/'?'/'>phone.sh;
+echo 'php -S 192.168.0.4:8081 -t  $HOME/storage/shared/'?'/'>phone.sh;
 chmod 777 phone.sh
+
 #logo
 cd $PREFIX/etc/;
 rm motd;

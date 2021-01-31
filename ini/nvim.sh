@@ -1,6 +1,6 @@
 #Install vim y neovim
-apt install vim;
-apt-get install neovim;
+sudo apt install vim;
+sudo apt-get install neovim;
 
 #configuracion de plugins
 #git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/vumdle.vim
