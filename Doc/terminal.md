@@ -80,6 +80,13 @@
     ctrl+alt+c =  {abrir nueva ventana}
 
     ctrl+r = {buscador de comandos ejetudatos usados}
+    
+    &,fg,bg = 
+    {& permite ejecutar archivos en segundo plano
+    fg permite traer archivos del segundo plano al primero
+    bg permite enviar archivos al segundo plano
+    ctrl+z envia procesos al segundo plabo}
+
 
 # Terminal termux
 

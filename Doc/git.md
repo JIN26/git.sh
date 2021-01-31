@@ -122,3 +122,6 @@
     $ git fetch =
     {actualiza el repositorio local
     con el del servidor}
+
+    * git switch =
+    {[-] cambia la ultima accion ejecutada}
