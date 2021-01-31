@@ -260,14 +260,6 @@
 		</svg>
 		</br>
 		<a href="../../git.sh/README.md">comando</a>
-		<!--?php
-        //ejemplo de uso de getenv()
-        $ip=getenv('REMOTE_ADDR');
-        echo("IP: $ip::");
-        //uso de una variable global ($_SERVER o $ENV)
-        $ip=$_SERVER['REMOTE_ADDR'];
-        echo("IP: $ip::");
-		?>
 	            <ul>
                     <li><a href="#azul">AZUL</a></li>
                     <li><a href="#rojo">ROJO</a></li>
@@ -288,7 +280,7 @@
             <hr/>
             <h2 >VERDE</h2>
             <img id="verde"src="imagenes/verde.png" width="300" height="300"/>
-			<?php phpinfo();? -->
+			<?php phpinfo();?>
 
 			<!-- header start -->
 			<div id="header" class="section">
@@ -392,7 +384,11 @@
 			Form section start
 		   <div class="section">
 				<h1><span>Contact Me</span></h1>
-				
+<<<<<<< HEAD:html/index.html
+
+=======
+
+>>>>>>> data:html/index.php
 				<form>
 					<input name="name" placeholder="Name" type="text" required /><br/>
 					<input name="email" placeholder="Email" type="email" required /><br/>
@@ -458,6 +454,10 @@
 			</form>
 
 			<script src="js\abc.js" ></script>
-			<script src="js\comportamiento.js" ></script>	 
-	</body>
+			<script src="js\comportamiento.js" ></script>
+			<?php
+				print "<br> hola <br>";
+				/*ip local del sevidor*/
+			?>
+	 </body>
 </html>
