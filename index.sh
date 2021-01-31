@@ -16,6 +16,16 @@ apt update && apt upgrade;
 #Jin
 PWDJIN=$PWD;
 mkdir ~/.Jin
+cd /bin
+sudo ln -s $PWDJIN/img/logo.sh logo
+chmod 777 logo
+cd ~/.Jin
+sudo ln -s $PWDJIN/img/logo.sh logo
+chmod 777 logo
+
+#Jin
+PWDJIN=$PWD;
+mkdir ~/.Jin
 cd ~/.Jin
 ln -s $PWDJIN/img/logo.sh logo
 chmod 777 logo
@@ -23,9 +33,9 @@ cp logo $PREFIX/bin
 cp logo $PREFIX/bin/applets
 
 #Servidor localhost
-ln -s $PWDJIN/html/index.html index.html
-chmod 777 index.html
-cp index.html ~/storage/shared/?
+ln -s $PWDJIN/html/index.html index.php
+chmod 777 index.php
+cp index.php ~/storage/shared/?
 
 #ip php
 ln -s $PWDJIN/html/php/ip.php ip.php
