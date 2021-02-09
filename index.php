@@ -54,7 +54,7 @@
 					</span>
 				</span>
 			</div>
-			
+
 			<textarea name="comentario" rows="10" cols="40">Escribe tu commentario...</textarea>
 			<input  id="linea" type="text" data-type="text" name="fistname" value="Nombre" aria-required="true" placeholder="Nombre" required minlength="4"/>
 		</from>
@@ -278,13 +278,18 @@
 
 			<script src="js\abc.js" ></script>
 			<script src="js\comportamiento.js" ></script>
-			
+
 			<?php
 
-				$HOLA = "hola";
-				print "<br> hola <br>" . $HOLA;
+				function mostrar(){
+					$HOLA = "hola";
+					print "<br> hola <br>" . $HOLA;
+					echo "$HOLA";
+				}
+				mostrar();
+				include ("/php/ip.php");
 				/*ip local del sevidor*/
 			?>
-			<a href = "php/info.php">PHP</a>
+			<a href = "php/info.php">PHP</a>	
 	 </body>
 </html>
