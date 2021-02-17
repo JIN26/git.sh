@@ -65,24 +65,6 @@ cd ~/.Jin
 echo 'php -S 192.168.0.4:8081 -t  $HOME/storage/shared/'?'/'>phone.sh;
 chmod 777 phone.sh
 
-#logo
-cd $PREFIX/etc/;
-rm motd;
-echo 'if [ -x /data/data/com.termux/files/usr/libexec/termux/command-not-found ]; then
-        command_not_found_handle() {
-                /data/data/com.termux/files/usr/libexec/termux/command-not-found "$1"
-        }
-logo
-
-fi
-
-PS1='Jin$ ''>bash.bashrc;
-
-setterm -foreground green;
-echo "####################";
-figlet -f block logo;
-echo "####################";
-
 #storage
 cd ~;
 termux-setup-storage;
@@ -118,10 +100,8 @@ git clone https://github.com/Anonymous-Zpt/T-root
 #kali init
 cd ~;
 echo '#!/bin/bash
-curl ifconfig.me||cowsay sorry
 cd ~/.Jin
 echo
-
 ./phone.sh &;
 cd kali;
 ./start-kali.sh

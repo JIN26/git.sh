@@ -15,37 +15,6 @@ sudo npm install -g react-native-cli
 sudo npm install -g react-native-app
 sudo npm install expo-cli --global
 
-#alias de linux
-echo "#User default
-alias vim='vim -p'
-logo
-
-case '$OSTYPE' in
-    cygwin*)
-        alias open="cmd /c start"
-        ;;
-    linux-androideabi)
-        alias start="xdg-open"
-        alias open="xdg-open"
-        ;;
-    linux-gnu)
-        alias start="xdg-open"
-        alias open="xdg-open"
-        ;;
-    darwin*)
-        alias start="open"
-        ;;
-
-esac">~/.bash_aliases
-#echo " # Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-#if [ -f ~/.bash_aliases ]; then
-#   . ~/.bash_aliases
-#fi">>~/.bashrc
-
 #otros
 #sudo snap install tree;
 
