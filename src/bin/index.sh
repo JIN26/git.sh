@@ -26,7 +26,7 @@ fi
 
 logo
 cd $PWDJIN
-cd ini
+cd ../cmd
 chmod 777 vnc.sh
 ./vnc.sh &
 
