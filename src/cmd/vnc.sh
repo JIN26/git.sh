@@ -10,11 +10,11 @@ case "$OSTYPE" in
     linux-androideabi)
         vncserver-stop
         vncserver-start
-        php -S "${local:0:11}:8080" -t ../
+        php -S "${local:0:11}:8080" -t ../webpack/php/
         ;;
     linux-gnu)
         google-chrome "${local:0:11}:8080"
-        php -S "${local:0:11}:8080" -t ../
+        php -S "${local:0:11}:8080" -t ../webpack/php/
         ;;
     darwin*)
         ;;

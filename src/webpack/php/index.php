@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="css\style.css">
 		<!-- <link rel="stylesheet" href="css\styleBase.css"> -->
 		<!-- <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"> -->
+		<!-- <link rel="stylesheet" href="http:\\192.168.200.3:8080\tienda\css\styleBase.css"> -->
 	</head>
 	<body>
 		<from action="gestion.php" method="post" autocomplete="off">
@@ -279,17 +280,7 @@
 			<script src="js\abc.js" ></script>
 			<script src="js\comportamiento.js" ></script>
 
-			<?php
 
-				function mostrar(){
-					$HOLA = "hola";
-					print "<br> hola <br>" . $HOLA;
-					echo "$HOLA";
-				}
-				mostrar();
-				include ("/php/ip.php");
-				/*ip local del sevidor*/
-			?>
-			<a href = "php/info.php">PHP</a>	
+			<a href = "php/info.php">PHP</a>
 	 </body>
 </html>
