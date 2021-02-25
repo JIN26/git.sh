@@ -38,7 +38,10 @@ function get_client_ip_server() {
 
     return $ipaddress;
 }
-echo 'IP address  es ' . get_client_ip_env() .' o  es ' . get_client_ip_server() . '<br>';
+if (get_client_ip_env=='UNKNOWN')
+    echo 'IP address  es ' . get_client_ip_env() . '<br>' ;
+else
+    echo 'IP address es ' . get_client_ip_server() . '<br>';
 ?>
 
 
