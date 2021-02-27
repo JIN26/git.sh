@@ -1,23 +1,22 @@
 #!/bin/bash
+PWDJIN=$PWD/src;#Direccion del proyecto
 
-jk="$(ping -c 1 -q www.google.com >&/dev/null; echo $?)" #Coneccion de internet
-local=$(hostname -I)
+source $PWDJIN/lib/network.lib
+
 setterm -foreground green;
-figlet -cf slant "${local:0:12}:8080" ||cowsay sorry
-
+figlet -cf slant "$ipp" ||cowsay sorry
+read
 #chequeo de packete apache2
 case $(command -v apache2) in
     "")
     case $jk in
         0)
-        ;;
+            apt-get install -y apache2
+            apt-get install -y apache2-doc
+            ;;
         *)
             -e "\n$r[-]$b1 banner:$r No Hay Conexion A Internet.\n$b"
     esac
-    clear
-    apt-get install -y apache2
-    apt-get install -y apache2-doc
-    cd /etc/apache2/sites-available/
     echo "
     <VirtualHost *:80>
         ServerName Jin
@@ -25,11 +24,10 @@ case $(command -v apache2) in
         ServerAdmin webmaster@localhost
         DocumentRoot /home/jin/Downloads/0/git.sh/src/webpack/
         DirectoryIndex index.php
-    </VirtualHost>">Jin.conf;
+    </VirtualHost>">/etc/apache2/sites-available/Jin.conf;
     a2ensite Jin.conf
-    cd /var/www/
-    mkdir Jin
-    cd Jin
+    mkdir /var/www/Jin
+    cd /var/www/Jin
     sudo ln -s /home/jin/Downloads/0/git.sh/src/webpack/index.php index.php
     echo "127.0.0.1     jin">>/etc/hosts
     echo "Listen 81">>/etc/apache2/ports.conf
@@ -42,11 +40,11 @@ case "$OSTYPE" in
     linux-androideabi)
         vncserver-stop
         vncserver-start
-        php -S "${local:0:12}:8080" -t ../webpack/
+        php -S "${local:0:11}:8080" -t ../webpack/
         ;;
     linux-gnu)
-        google-chrome "${local:0:12}:8080"
-        php -S "${local:0:12}:8080" -t ../webpack/
+        google-chrome "${local:0:11}:8080"
+        php -S "${local:0:11}:8080" -t ../webpack/
         ;;
     darwin*)
         ;;

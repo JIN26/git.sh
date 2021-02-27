@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "command": "chmod 777 index.sh; ./index.sh",
+            "command": "chmod +x index.sh; ./index.sh",
             "name": "code",
             "request": "launch",
             "type": "node-terminal"
