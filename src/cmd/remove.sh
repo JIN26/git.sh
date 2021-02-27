@@ -1,0 +1,2 @@
+rm ~/.Jin
+rm ~/kali
