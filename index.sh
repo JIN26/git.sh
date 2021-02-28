@@ -1,15 +1,20 @@
 #!/bin/bash
+PWDL=$PWD
 
+#package.sh
+    chmod +x src/package/install.pkg
+    . src/package/install.pkg
 #logo
-    if [ -z $(ls ~/.Jin) ]; then
-        sudo ln -s $PWDJIN/img/logo.sh ~/.Jin/logo
+    if [ -f ~/.Jin/logo ];then
+        echo
+    else
+        sudo ln -s $PWDL/img/logo.sh logo
         chmod +x logo
         sudo cp logo $PREFIX/bin
         sudo cp logo $PREFIX/bin/applets
     fi
-#package.sh
-    chmod +x src/package/package.sh
-    . src/package/package.sh
+
 #Servidor local $ipp
+    cd $PWDL
     chmod +x src/cmd/vnc.sh
     . src/cmd/vnc.sh &

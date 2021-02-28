@@ -1,24 +1,21 @@
 #!/bin/bash
 
 source src/lib/network.lib;
-clear
-logo
-
-echo $net
+echo
 case "$OSTYPE" in
     linux-androideabi) #phone
         setterm -foreground green;
-        figlet -cf slant "$iptp" ||cowsay sorry
-        figlet -cf slant "$ipt:8081" ||cowsay sorry
-        termux-open "$iptp"
-        php -S "$ipt:8081" -t  ~/storage/shared/Download/ &
-        php -S "$iptp" -t src/webpack/
+        figlet -cf slant "$ipp" ||cowsay sorry
+        figlet -cf slant "$ip:8081" ||cowsay sorry
+        termux-open "$ipp"
+        php -S "$ip:8081" -t  ~/storage/shared/Download/ &
+        php -S "$ipp" -t src/www/
         ;;
     linux-gnu*) #laptop and phone internal kali
         setterm -foreground green;
         figlet -cf slant "$ipp" ||cowsay sorry
         google-chrome "$ipp"
-        php -S "$ipp" -t src/webpack/
+        php -S "$ipp" -t src/www/
         ;;
 esac
 #sshfs localhost:/path/to/folder /path/to/mount/point
