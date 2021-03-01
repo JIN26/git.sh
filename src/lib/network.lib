@@ -14,8 +14,4 @@
     fi
 
 #Coneccion de internet
-        if [ ping -c1 google.com &>/dev/null ]; then
-            net=0
-        else
-            net=1
-        fi
+    net="$(ping -c1 8.8.8.8 >&/dev/null; echo $?)"

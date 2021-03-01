@@ -1,7 +1,5 @@
 #lib
     source src/lib/network.lib
-    echo $net
-    read
 #Jin
     if [ -d ~/.Jin/ ];then
         cd ~/.Jin
@@ -174,7 +172,6 @@
                     darwin*)
                         ;;
                 esac
-            sudo apt update && sudo apt upgrade
             echo -e "\n Packages finally \n"
             ;;
         *)
