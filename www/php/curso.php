@@ -34,9 +34,7 @@
 		mostrar();
 
 		echo "hola $Cliente <br><br>";
-		/*ip local del sevidor*/
-		include "ip.php";
-		include "info.php";
+		
 	?>
 		<!--fecha
 			<div>php/fecha.html</div>

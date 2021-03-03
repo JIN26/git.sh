@@ -1,5 +1,5 @@
 #lib
-    source src/lib/network.lib
+    source $HOME/Downloads/0/git.sh/src/lib/network.lib
 #Jin
     if [ -d ~/.Jin/ ];then
         cd ~/.Jin
@@ -175,5 +175,5 @@
             echo -e "\n Packages finally \n"
             ;;
         *)
-            echo -e "\n No Hay Conexion A Internet."
+            echo -e "\n No Hay Conexion A Internet.\n"
     esac
