@@ -73,4 +73,7 @@ dkms.conf
 /nbproject/
 /.dep.inc
 /Makefile
-Doc/temp/
+/temp/
+/.vscode/
+/config/
+LICENSE
